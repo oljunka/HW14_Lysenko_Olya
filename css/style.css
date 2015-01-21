@@ -1,0 +1,59 @@
+body{
+	background: #000 url('../img/beach.jpg') center top no-repeat;
+	background-size: 100% auto;
+}
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+h1{
+	font-family: Arial, Verdana, Tahoma, sans-serif;
+	font-size: 65px;
+	font-weight: bold;
+	text-align: center;
+
+	text-shadow: 2px 2px 1px #000;
+	
+	color: #fff;
+}
+audio{
+	display: block;
+	margin: 0 auto 70px;
+}
+#stopwatch{
+	text-align: center;
+
+	margin-bottom: 20px;
+
+	font-family: Arial, Verdana, Tahoma, sans-serif;
+	font-size: 100px;
+
+	color: #fff;
+
+	text-shadow: 2px 2px 1px #000;
+}
+.btns{
+	text-align: center;
+}
+button{
+	padding: 15px 30px;
+	margin-right: 15px;
+
+	font-family: Arial, Verdana, Tahoma, sans-serif;
+	font-size: 18px;
+	
+	color: #fff;
+	background-color: rgb(40, 69, 128);
+
+	border: none;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #000;
+	outline: none;
+}
+button:active{
+	box-shadow: none;
+	color: #000;
+}
+button:last-child{
+	margin-right: 0;
+};
