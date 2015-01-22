@@ -21,6 +21,10 @@ function StopWatch(sec, block){
 	setTimeout(function(){
 		StopWatch(sec, block);
 	}, 1000);
+	
+	start.disabled = true;
+  	stop.disabled = false;
+  	reset.disabled = false;
 };
 
 var start = document.getElementById('start-btn');
@@ -34,10 +38,17 @@ var stop = document.getElementById('stop-btn');
 
 stop.addEventListener("click", function(event){
 	event.preventDefault();
+	
+	start.disabled = false;
+  	stop.disabled = true;
+  	reset.disabled = false;
 });
 
 reset.addEventListener("click", function(event){
-	clearInterval(timer);
+	
+	start.disabled = false;
+  	stop.disabled = true;
+  	reset.disabled = true;
 });
 
 
